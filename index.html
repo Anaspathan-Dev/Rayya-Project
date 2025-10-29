@@ -5,50 +5,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayya Home Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="preload" href="AGaramondPro-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="AGaramondPro-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 </head>
 
 <body>
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <h4 class="text-white">Collapsed content</h4>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+    <header>
+        <div class="overlay"></div>
+
+        <nav class="navbar" style="z-index: 999;">
+            <ul>
+                <li><a href="#" class="menu"><i class="fa-solid fa-bars"></i>Menu</a></li>
+                <li><a href="#"><img src="images/logo.png" alt="logo" width="118px"></a></li>
+                <li><a href="#" class="menu">Book Now</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Video element with multiple sources -->
+        <video id="timelineVideo" playsinline autoplay muted loop>
+            <source src="video/first.mp4" type="video/mp4" data-timeline="default">
+            <source src="video/video1.mp4" type="video/mp4" data-timeline="16/01/2017">
+            <source src="video/video2.mp4" type="video/mp4" data-timeline="28/02/2017">
+            <!-- Add more video sources for each timeline event -->
+        </video>
+
+        <!-- Header content -->
+        <div class="container">
+            <div class="box">
+                <div class="inner">
+                    <h1>Balance Your Life with Natural Wellness</h1>
+                    <p>Escape the ordinary and discover holistic wellness designed <br>for inner balance and outer glow.
+                    </p>
+                    <p><i class="fa-solid fa-circle-play"></i>Watch Full Video</p>
+                </div>
+            </div>
+
+            <!-- Timeline progress bar - box ke niche -->
+            <div class="timeline-container">
+                <div class="cd-horizontal-timeline loaded">
+                    <div class="timeline">
+                        <div class="events-wrapper">
+                            <div class="events" style="width: 1800px;">
+                                <ol>
+                                    <li><a href="#0" data-date="16/01/2017" class="" style="left: 120px;">Welcome</a>
+                                    </li>
+                                    <li><a href="#0" data-date="28/02/2017" style="left: 300px;" class="">Ayurveda</a>
+                                    </li>
+                                    <li><a href="#0" data-date="20/04/2017" style="left: 480px;" class="">Yoga</a></li>
+                                    <li><a href="#0" data-date="20/05/2017" style="left: 600px;">Yoga</a></li>
+                                    <li><a href="#0" data-date="09/07/2017" style="left: 780px;">healthy cusine</a></li>
+                                </ol>
+                                <!-- <span class="filling-line" aria-hidden="true" style="transform: scaleX(0.281506);"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events-content" style="height: 225px;">
+                        <!-- Your existing events content remains same -->
+                    </div>
+                </div>
             </div>
         </div>
-        <nav class="navbar navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> Menu
-            </button>
-             <img src="images/image.png" alt="">
-        </nav>
+    </header>
+
+
+
+    <div class="sec-container">
+
+        <div class="left">
+            <img src="images/vector.png" alt="">
+            <h2>Recharge Your Mind, <br> Body & Spirit</h2>
+        </div>
+        <div class="card explore-container">
+            <div class="explore-body explore-card">
+                <h5 class="card-title text-black">A Journey to Holistic Healing</h5>
+                <p class="card-text text-black">
+                    At Rayya Wellness, we believe that true wellbeing comes from a harmonious balance of body,
+                    mind, and spirit. Inspired by ancient healing.
+                <p class="card-text"> traditions and enhanced by modern science, we
+                    offer a sanctuary of serenity in the heart of the city — where luxury meets natural healing.
+                    Located within the elegant Ramada Downtown Dubai, our spa and wellness center is designed to
+                    help you escape the stresses of daily life and reconnect with yourself. From deeply
+                    therapeutic massages and revitalizing facials to detox rituals and guided meditation, every
+                    experience is thoughtfully crafted to restore, recharge, and renew. </p>
+                <p class="card-text">
+                    What sets Rayya Wellness apart is our dedication to personalized care. Our skilled
+                    therapists, natural products, and calming environment work in harmony to support your unique
+                    wellness journey. Whether you're seeking relaxation, rejuvenation, or complete renewal,
+                    you’ll find your balance here.</p>
+                <a href="#" class="btn btn-primary explore-btn">Explore more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <h1 class="text-center fw-400 text-black fs-2">I AM LOOKING FOR...</h1>
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-upper">
+                        <img src="images/yoga1.jpg" class="imgs">
+                    </div>
+                    <div class="card-bottom text-center">
+                        <h5 class="m-0">YOGA</h5>
+                        <p class="m-0">Elevate Mind and Body</p>
+                        <a href="#" class="text-black text-decoration-underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-upper">
+                        <img src="images/yoga2.jpg" class="imgs">
+                    </div>
+                    <div class="card-bottom text-center">
+                        <h5 class="m-0">SOUND THERAPY</h5>
+                        <p class="m-0">Harmony Through Sound</p>
+                        <a href="#" class="text-black text-decoration-underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+
+                <div class="card">
+                    <div class="card-upper">
+                        <img src="images/yoga3.jpg" class="imgs">
+                    </div>
+                    <div class="card-bottom text-center">
+                        <h5 class="m-0">SPA</h5>
+                        <p class="m-0">Indulge in Serenity</p>
+                        <a href="#" class="text-black text-decoration-underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-upper">
+                        <img src="images/yoga4.png" class="imgs">
+                    </div>
+                    <div class="card-bottom text-center">
+                        <h5 class="m-0">CRYOTHERAPY</h5>
+                        <p class="m-0">Discover Ice Cold Revitalization</p>
+                        <a href="#" class="text-black text-decoration-underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+
+                <div class="card">
+                    <div class="card-upper">
+                        <img src="images/yoga5.jpg" class="imgs">
+                    </div>
+                    <div class="card-bottom text-center">
+                        <h5 class="m-0">OXYGEN THERAPY</h5>
+                        <p class="m-0">Breathe in Freshness</p>
+                        <a href="#" class="text-black text-decoration-underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-upper">
+                        <img src="images/yoga6.jpg" class="imgs">
+                    </div>
+                    <div class="card-bottom text-center">
+                        <h5 class="m-0">MENTAL & EMOTIONAL WELL-BEING</h5>
+                        <p class="m-0">Empower Your Mind</p>
+                        <a href="#" class="text-black text-decoration-underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="text-center disc-title">DISCOVER WELLNESS ACROSS RAYYA WELLNESS’ LOCAL ESCAPES</h1>
+        <div class="up">
+            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
+                <img src="images/local1.jpg" class="card-img" alt="Stony Beach" />
+                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
+                    <h5 class="card-title ">THE FIRST COLLECTION MARINA</h5>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
+                <img src="images/local2.jpg" class="card-img-two" alt="Stony Beach" />
+                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
+                    <h5 class="card-title text-center">TRYP BY WYNDHAM DUBAI</h5>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
+                <img src="images/local3.jpg" class="card-img" alt="Stony Beach" />
+                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
+                    <h5 class="card-title ">STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE</h5>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
+                <img src="images/local4.jpg" class="card-img" alt="Stony Beach" />
+                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
+                    <h5 class="card-title ">THE RETREAT PALM DUBAI MGALLERY BY SOFITEL</h5>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
 
-    <!-- jQuery (first priority) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
 
-    <!-- Popper.js (tooltip, dropdown second priority) -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS (last priority) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
