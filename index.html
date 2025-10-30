@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayya Home Page</title>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Swiper CSS (missing thi) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +50,7 @@
         </video>
 
         <!-- Header content -->
-        <div class="container">
+        <div class="container px-0">
             <div class="box">
                 <div class="inner">
                     <h1>Balance Your Life with Natural Wellness</h1>
@@ -72,36 +89,37 @@
 
 
 
-    <div class="sec-container">
+    <div class="container px-0 sec-container d-flex">
 
-        <div class="left">
+        <div class="left-card">
             <img src="images/vector.png" alt="">
-            <h2>Recharge Your Mind, <br> Body & Spirit</h2>
+            <h2 class="fw-400 text-black">RECHARGE YOUR MIND, <br> BODY & SPIRIT</h2>
         </div>
-        <div class="card explore-container">
+
+        <div class="right-card">
             <div class="explore-body explore-card">
-                <h5 class="card-title text-black">A Journey to Holistic Healing</h5>
+                <h5 class="card-title fw-bold fs-6 text-black">A Journey to Holistic Healing</h5>
                 <p class="card-text text-black">
                     At Rayya Wellness, we believe that true wellbeing comes from a harmonious balance of body,
                     mind, and spirit. Inspired by ancient healing.
-                <p class="card-text"> traditions and enhanced by modern science, we
-                    offer a sanctuary of serenity in the heart of the city — where luxury meets natural healing.
+                    traditions and enhanced by modern science, we
+                    offer a sanctuary of serenity in the heart of the city — where luxury meets natural healing. <br>
                     Located within the elegant Ramada Downtown Dubai, our spa and wellness center is designed to
                     help you escape the stresses of daily life and reconnect with yourself. From deeply
                     therapeutic massages and revitalizing facials to detox rituals and guided meditation, every
-                    experience is thoughtfully crafted to restore, recharge, and renew. </p>
-                <p class="card-text">
+                    experience is thoughtfully crafted to restore, recharge, and renew. <br>
+
                     What sets Rayya Wellness apart is our dedication to personalized care. Our skilled
                     therapists, natural products, and calming environment work in harmony to support your unique
                     wellness journey. Whether you're seeking relaxation, rejuvenation, or complete renewal,
-                    you’ll find your balance here.</p>
-                <a href="#" class="btn btn-primary explore-btn">Explore more</a>
+                    you’ll find your balance here.
+                    <a href="#" class="btn btn-primary explore-btn">Explore more</a>
             </div>
         </div>
     </div>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid looking-part">
         <h1 class="text-center fw-400 text-black fs-2">I AM LOOKING FOR...</h1>
         <div class="row justify-content-center g-4">
             <div class="col-12 col-sm-6 col-md-4">
@@ -186,48 +204,153 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <h1 class="text-center disc-title">DISCOVER WELLNESS ACROSS RAYYA WELLNESS’ LOCAL ESCAPES</h1>
-        <div class="up">
-            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
-                <img src="images/local1.jpg" class="card-img" alt="Stony Beach" />
-                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
-                    <h5 class="card-title ">THE FIRST COLLECTION MARINA</h5>
+    <div class="container-fluid px-0">
+        <h1 class="local-heading fw-400 text-center px-3 px-md-0">DISCOVER WELLNESS ACROSS RAYYA WELLNESS' LOCAL ESCAPES
+        </h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
-                <img src="images/local2.jpg" class="card-img-two" alt="Stony Beach" />
-                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
-                    <h5 class="card-title text-center">TRYP BY WYNDHAM DUBAI</h5>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
-                <img src="images/local3.jpg" class="card-img" alt="Stony Beach" />
-                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
-                    <h5 class="card-title ">STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE</h5>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local3.jpg" alt="STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card bg-dark text-white card-hover" style="max-width: 352px; height: auto;">
-                <img src="images/local4.jpg" class="card-img" alt="Stony Beach" />
-                <div class="card-img-overlay bottom-title" style="background-color: rgba(0, 0, 0, 0.3)">
-                    <h5 class="card-title ">THE RETREAT PALM DUBAI MGALLERY BY SOFITEL</h5>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local4.jpg" alt="THE RETREAT PALM DUBAI MGALLERY BY SOFITEL">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">THE RETREAT PALM DUBAI MGALLERY BY SOFITEL</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Pagination hidden on mobile -->
+        <div class="swiper-pagination d-none d-md-flex justify-content-center"></div>
+    </div>
+
+
+    <!-- new Slider Section -->
+
+    <div class="container-fluid px-0">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local3.jpg" alt="STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local4.jpg" alt="THE RETREAT PALM DUBAI MGALLERY BY SOFITEL">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">THE RETREAT PALM DUBAI MGALLERY BY SOFITEL</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
+                        <div class="overlay-text">
+                            <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination hidden on mobile -->
+        <div class="swiper-pagination d-none d-md-flex justify-content-center"></div>
+    </div>
+
+
+    <div class="container px-0 slider-container">
+        <div class="left-image">
+            <img src="images/trainer.jpg" alt="yoga-img">
+        </div>
+
+        <div class="right">
+            <div class="right-content">
+                <h2 class="infir">Yoga & Meditation</h2>
+                <p>In a world full of distractions and demands, our Yoga and Meditation programs offer a grounding
+                    sanctuary — a space to reconnect, reflect, and restore. Designed for all levels, our sessions blend
+                    breath, movement, and mindfulness to awaken your body and calm your mind.</p>
+                <a href="#" class="read-more">READ MORE</a>
+            </div>
+        </div>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
 
 
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+    <script>
+
+
+    </script>
+
 </body>
 
 </html>
