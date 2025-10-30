@@ -10,7 +10,66 @@
     font-size: 1rem;
   }  
 }
+/* Responsive hide pagination on small screens */
+@media (max-width: 767px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
 
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .local-heading {
+    padding: 0 50px;
+  }
+  
+  .swiper-slide {
+    height: 400px;
+  }
+  
+  .overlay-text h3 {
+    font-size: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .local-heading {
+    padding: 0 161px;
+  }
+  
+  .swiper-slide {
+    height: 536px; /* Desktop ke liye original height */
+  }
+  
+  .overlay-text {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .overlay-text h3 {
+    font-size: 24px; /* Desktop ke liye bada font */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .local-heading {
+    padding: 0 200px;
+  }
+}
 @media only screen and (max-width: 767px) {
 
   .cd-horizontal-timeline.loaded{ margin: 0;}  
