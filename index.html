@@ -2,51 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rayya Home Page</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <!-- Swiper CSS (missing thi) -->
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+
+    <!-- Local Assets -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
+    <!-- ============================================ -->
+    <!-- HEADER SECTION - Hero Video with Timeline -->
+    <!-- ============================================ -->
     <header>
         <div class="overlay"></div>
 
-        <nav class="navbar" style="z-index: 999;">
-            <ul>
-                <li><a href="#" class="menu"><i class="fa-solid fa-bars"></i>Menu</a></li>
-                <li><a href="#"><img src="images/logo.png" alt="logo" width="118px"></a></li>
+        <nav class="navbar" style="z-index: 999">
+            <ul class="nav-ul">
+                <li>
+                    <a href="#" class="menu"><i class="fa-solid fa-bars"></i>Menu</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="logo" width="118px" /></a>
+                </li>
                 <li><a href="#" class="menu">Book Now</a></li>
             </ul>
-
         </nav>
 
         <!-- Video element with multiple sources -->
         <video id="timelineVideo" playsinline autoplay muted loop>
-            <source src="video/first.mp4" type="video/mp4" data-timeline="default">
-            <source src="video/video1.mp4" type="video/mp4" data-timeline="16/01/2017">
-            <source src="video/video2.mp4" type="video/mp4" data-timeline="28/02/2017">
-            <!-- Add more video sources for each timeline event -->
+            <source src="video/first.mp4" type="video/mp4" data-timeline="default" />
+            <source src="video/video1.mp4" type="video/mp4" data-timeline="16/01/2017" />
+            <source src="video/video2.mp4" type="video/mp4" data-timeline="28/02/2017" />
         </video>
 
         <!-- Header content -->
@@ -54,78 +58,99 @@
             <div class="box">
                 <div class="inner">
                     <h1>Balance Your Life with Natural Wellness</h1>
-                    <p>Escape the ordinary and discover holistic wellness designed <br>for inner balance and outer glow.
+                    <p>
+                        Escape the ordinary and discover holistic wellness designed
+                        <br />for inner balance and outer glow.
                     </p>
                     <p><i class="fa-solid fa-circle-play"></i>Watch Full Video</p>
                 </div>
             </div>
 
-            <!-- Timeline progress bar - box ke niche -->
+            <!-- Timeline progress bar -->
             <div class="timeline-container">
                 <div class="cd-horizontal-timeline loaded">
                     <div class="timeline">
                         <div class="events-wrapper">
-                            <div class="events" style="width: 1800px;">
+                            <div class="events" style="width: 1800px">
                                 <ol>
-                                    <li><a href="#0" data-date="16/01/2017" class="" style="left: 120px;">Welcome</a>
+                                    <li>
+                                        <a href="#0" data-date="16/01/2017" class="" style="left: 120px">Welcome</a>
                                     </li>
-                                    <li><a href="#0" data-date="28/02/2017" style="left: 300px;" class="">Ayurveda</a>
+                                    <li>
+                                        <a href="#0" data-date="28/02/2017" style="left: 300px" class="">Ayurveda</a>
                                     </li>
-                                    <li><a href="#0" data-date="20/04/2017" style="left: 480px;" class="">Yoga</a></li>
-                                    <li><a href="#0" data-date="20/05/2017" style="left: 600px;">Yoga</a></li>
-                                    <li><a href="#0" data-date="09/07/2017" style="left: 780px;">healthy cusine</a></li>
+                                    <li>
+                                        <a href="#0" data-date="20/04/2017" style="left: 480px" class="">Yoga</a>
+                                    </li>
+                                    <li>
+                                        <a href="#0" data-date="20/05/2017" style="left: 600px">Yoga</a>
+                                    </li>
+                                    <li>
+                                        <a href="#0" data-date="09/07/2017" style="left: 780px">healthy cusine</a>
+                                    </li>
                                 </ol>
-                                <!-- <span class="filling-line" aria-hidden="true" style="transform: scaleX(0.281506);"></span> -->
                             </div>
                         </div>
                     </div>
-                    <div class="events-content" style="height: 225px;">
-                        <!-- Your existing events content remains same -->
+                    <div class="events-content" style="height: 225px">
+                        <!-- Events content -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-
-
+    <!-- ============================================ -->
+    <!-- RECHARGE SECTION - Mind, Body & Spirit -->
+    <!-- ============================================ -->
     <div class="container px-0 sec-container d-flex">
-
         <div class="left-card">
-            <img src="images/vector.png" alt="">
-            <h2 class="fw-400 text-black">RECHARGE YOUR MIND, <br> BODY & SPIRIT</h2>
+            <img src="images/vector.png" alt="" />
+            <h2 class="fw-400 text-black">
+                RECHARGE YOUR MIND, <br />
+                BODY & SPIRIT
+            </h2>
         </div>
 
         <div class="right-card">
             <div class="explore-body explore-card">
-                <h5 class="card-title fw-bold fs-6 text-black">A Journey to Holistic Healing</h5>
+                <h5 class="card-title fw-bold fs-6 text-black">
+                    A Journey to Holistic Healing
+                </h5>
                 <p class="card-text text-black">
-                    At Rayya Wellness, we believe that true wellbeing comes from a harmonious balance of body,
-                    mind, and spirit. Inspired by ancient healing.
-                    traditions and enhanced by modern science, we
-                    offer a sanctuary of serenity in the heart of the city — where luxury meets natural healing. <br>
-                    Located within the elegant Ramada Downtown Dubai, our spa and wellness center is designed to
-                    help you escape the stresses of daily life and reconnect with yourself. From deeply
-                    therapeutic massages and revitalizing facials to detox rituals and guided meditation, every
-                    experience is thoughtfully crafted to restore, recharge, and renew. <br>
+                    At Rayya Wellness, we believe that true wellbeing comes from a
+                    harmonious balance of body, mind, and spirit. Inspired by ancient
+                    healing traditions and enhanced by modern science, we offer a
+                    sanctuary of serenity in the heart of the city — where luxury meets
+                    natural healing. <br />
+                    Located within the elegant Ramada Downtown Dubai, our spa and
+                    wellness center is designed to help you escape the stresses of daily
+                    life and reconnect with yourself. From deeply therapeutic massages
+                    and revitalizing facials to detox rituals and guided meditation,
+                    every experience is thoughtfully crafted to restore, recharge, and
+                    renew. <br />
 
-                    What sets Rayya Wellness apart is our dedication to personalized care. Our skilled
-                    therapists, natural products, and calming environment work in harmony to support your unique
-                    wellness journey. Whether you're seeking relaxation, rejuvenation, or complete renewal,
-                    you’ll find your balance here.
+                    What sets Rayya Wellness apart is our dedication to personalized
+                    care. Our skilled therapists, natural products, and calming
+                    environment work in harmony to support your unique wellness journey.
+                    Whether you're seeking relaxation, rejuvenation, or complete
+                    renewal, you'll find your balance here.
                     <a href="#" class="btn btn-primary explore-btn">Explore more</a>
+                </p>
             </div>
         </div>
     </div>
 
-
+    <!-- ============================================ -->
+    <!-- I AM LOOKING FOR SECTION - Services Grid -->
+    <!-- ============================================ -->
     <div class="container-fluid looking-part">
         <h1 class="text-center fw-400 text-black fs-2">I AM LOOKING FOR...</h1>
         <div class="row justify-content-center g-4">
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <div class="card-upper">
-                        <img src="images/yoga1.jpg" class="imgs">
+                        <img src="images/yoga1.jpg" class="imgs" />
                     </div>
                     <div class="card-bottom text-center">
                         <h5 class="m-0">YOGA</h5>
@@ -138,7 +163,7 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <div class="card-upper">
-                        <img src="images/yoga2.jpg" class="imgs">
+                        <img src="images/yoga2.jpg" class="imgs" />
                     </div>
                     <div class="card-bottom text-center">
                         <h5 class="m-0">SOUND THERAPY</h5>
@@ -149,10 +174,9 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-4">
-
                 <div class="card">
                     <div class="card-upper">
-                        <img src="images/yoga3.jpg" class="imgs">
+                        <img src="images/yoga3.jpg" class="imgs" />
                     </div>
                     <div class="card-bottom text-center">
                         <h5 class="m-0">SPA</h5>
@@ -165,7 +189,7 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <div class="card-upper">
-                        <img src="images/yoga4.png" class="imgs">
+                        <img src="images/yoga4.png" class="imgs" />
                     </div>
                     <div class="card-bottom text-center">
                         <h5 class="m-0">CRYOTHERAPY</h5>
@@ -176,10 +200,9 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-4">
-
                 <div class="card">
                     <div class="card-upper">
-                        <img src="images/yoga5.jpg" class="imgs">
+                        <img src="images/yoga5.jpg" class="imgs" />
                     </div>
                     <div class="card-bottom text-center">
                         <h5 class="m-0">OXYGEN THERAPY</h5>
@@ -192,7 +215,7 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <div class="card-upper">
-                        <img src="images/yoga6.jpg" class="imgs">
+                        <img src="images/yoga6.jpg" class="imgs" />
                     </div>
                     <div class="card-bottom text-center">
                         <h5 class="m-0">MENTAL & EMOTIONAL WELL-BEING</h5>
@@ -204,14 +227,18 @@
         </div>
     </div>
 
+    <!-- ============================================ -->
+    <!-- LOCAL ESCAPES SECTION - Swiper Slider -->
+    <!-- ============================================ -->
     <div class="container-fluid px-0">
-        <h1 class="local-heading fw-400 text-center px-3 px-md-0">DISCOVER WELLNESS ACROSS RAYYA WELLNESS' LOCAL ESCAPES
+        <h1 class="local-heading fw-400 text-center px-3 px-md-0">
+            DISCOVER WELLNESS ACROSS RAYYA WELLNESS' LOCAL ESCAPES
         </h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
+                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA" />
                         <div class="overlay-text">
                             <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
                         </div>
@@ -219,7 +246,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
+                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI" />
                         <div class="overlay-text">
                             <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
                         </div>
@@ -227,7 +254,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <img src="images/local3.jpg" alt="STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE">
+                        <img src="images/local3.jpg" alt="STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE" />
                         <div class="overlay-text">
                             <h3 class="mb-0">STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE</h3>
                         </div>
@@ -235,7 +262,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <img src="images/local4.jpg" alt="THE RETREAT PALM DUBAI MGALLERY BY SOFITEL">
+                        <img src="images/local4.jpg" alt="THE RETREAT PALM DUBAI MGALLERY BY SOFITEL" />
                         <div class="overlay-text">
                             <h3 class="mb-0">THE RETREAT PALM DUBAI MGALLERY BY SOFITEL</h3>
                         </div>
@@ -243,7 +270,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
+                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA" />
                         <div class="overlay-text">
                             <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
                         </div>
@@ -251,7 +278,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="image-container">
-                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
+                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI" />
                         <div class="overlay-text">
                             <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
                         </div>
@@ -263,94 +290,547 @@
         <div class="swiper-pagination d-none d-md-flex justify-content-center"></div>
     </div>
 
-
-    <!-- new Slider Section -->
-
-    <div class="container-fluid px-0">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
-                        <div class="overlay-text">
-                            <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
-                        <div class="overlay-text">
-                            <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="images/local3.jpg" alt="STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE">
-                        <div class="overlay-text">
-                            <h3 class="mb-0">STAYBRIDGE SUITES DUBAI FINANCIAL CENTRE</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="images/local4.jpg" alt="THE RETREAT PALM DUBAI MGALLERY BY SOFITEL">
-                        <div class="overlay-text">
-                            <h3 class="mb-0">THE RETREAT PALM DUBAI MGALLERY BY SOFITEL</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="images/local1.jpg" alt="THE FIRST COLLECTION MARINA">
-                        <div class="overlay-text">
-                            <h3 class="mb-0">THE FIRST COLLECTION MARINA</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="images/local2.jpg" alt="TRYP BY WYNDHAM DUBAI">
-                        <div class="overlay-text">
-                            <h3 class="mb-0">TRYP BY WYNDHAM DUBAI</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pagination hidden on mobile -->
-        <div class="swiper-pagination d-none d-md-flex justify-content-center"></div>
-    </div>
-
-
+    <!-- ============================================ -->
+    <!-- YOGA & MEDITATION SECTION - Image Slider -->
+    <!-- ============================================ -->
     <div class="container px-0 slider-container">
         <div class="left-image">
-            <img src="images/trainer.jpg" alt="yoga-img">
+            <img src="images/trainer.jpg" alt="yoga-img" />
         </div>
 
         <div class="right">
             <div class="right-content">
                 <h2 class="infir">Yoga & Meditation</h2>
-                <p>In a world full of distractions and demands, our Yoga and Meditation programs offer a grounding
-                    sanctuary — a space to reconnect, reflect, and restore. Designed for all levels, our sessions blend
-                    breath, movement, and mindfulness to awaken your body and calm your mind.</p>
+                <p>
+                    In a world full of distractions and demands, our Yoga and Meditation
+                    programs offer a grounding sanctuary — a space to reconnect,
+                    reflect, and restore. Designed for all levels, our sessions blend
+                    breath, movement, and mindfulness to awaken your body and calm your
+                    mind.
+                </p>
                 <a href="#" class="read-more">READ MORE</a>
             </div>
         </div>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
     </div>
 
+    <!-- ============================================ -->
+    <!-- WELLNESS COACHES SECTION - Team Swiper -->
+    <!-- ============================================ -->
+    <div class="container px-0">
+        <h1 class="local-heading fw-400 text-center px-3 px-md-0">
+            The perfect moment to embark on your wellness journey is now!
+        </h1>
+        <div class="swiper localSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/person1.png" alt="THE FIRST COLLECTION MARINA" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <h5 class="m-0">Vishnu MK</h5>
+                            <p class="m-0 cd-info">Wellness Coach</p>
+                            <a href="#" class="">Therapeutic Yoga, Meditation</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/person2.png" alt="TRYP BY WYNDHAM DUBAI" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <h5 class="m-0 cd-title">Yuga Sawant</h5>
+                            <p class="m-0 cd-info">Wellness Coach</p>
+                            <a href="#" class="cd-discription">Ayurveda, Sound Therapy</a>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/person3.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <h5 class="m-0">Jasmina Gufuravic</h5>
+                            <p class="m-0 cd-info">Wellness Coach</p>
+                            <a href="#" class="">Emotional Healing, NLP, EFT</a>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="js/script.js"></script>
-    <script>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/person1.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <h5 class="m-0">Jasmina Gufuravic</h5>
+                            <p class="m-0 cd-info">Wellness Coach</p>
+                            <a href="#" class="">Emotional Healing, NLP, EFT</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/person2.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <h5 class="m-0">Jasmina Gufuravic</h5>
+                            <p class="m-0 cd-info">Wellness Coach</p>
+                            <a href="#" class="black">Emotional Healing, NLP, EFT</a>
+                        </div>
+                    </div>
+                </div>
 
-    </script>
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/person3.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <h5 class="m-0">Jasmina Gufuravic</h5>
+                            <p class="m-0 cd-info">Wellness Coach</p>
+                            <a href="#" class="">Emotional Healing, NLP, EFT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination hidden on mobile -->
+        <div class="swiper-pagination d-none d-md-flex justify-content-center"></div>
+    </div>
 
+    <!-- ============================================ -->
+    <!-- OFFER & PACKAGES SECTION - Pricing Cards -->
+    <!-- ============================================ -->
+    <section class="offer-packages py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold title">OFFER & PACKAGES</h2>
+            <div class="row justify-content-center package-cards">
+                <!-- Basic Package -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-card h-100">
+                        <h5 class="package-title">Basic Package</h5>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="session">/Session</span>
+                        </div>
+                        <ul class="package-features">
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                        </ul>
+                        <a href="#" class="btn schedule-btn w-100">Schedule Now</a>
+                    </div>
+                </div>
+
+                <!-- Advance Package -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-card h-100">
+                        <h5 class="package-title">Advance Package</h5>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">150</span>
+                            <span class="session">/Session</span>
+                        </div>
+                        <ul class="package-features">
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                        </ul>
+                        <a href="#" class="btn schedule-btn w-100">Schedule Now</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-card h-100">
+                        <h5 class="package-title">Enterprise Package</h5>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">550</span>
+                            <span class="session">/Session</span>
+                        </div>
+                        <ul class="package-features">
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Includes a 1-hour Free
+                                Session
+                            </li>
+                        </ul>
+                        <a href="#" class="btn schedule-btn w-100">Schedule Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- BLOG SECTION - Articles & Posts -->
+    <!-- ============================================ -->
+    <section class="blog-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold section-title">WHERE WELLNESS & WORDS CONVERGE!</h2>
+
+            <div class="row gx-4 gy-4 align-items-stretch">
+
+                <!-- Left Large Blog -->
+                <div class="col-lg-6 d-flex">
+                    <div class="blog-item large-blog w-100 d-flex flex-column h-100">
+                        <div class="blog-image position-relative">
+                            <img src="images/blog1.png" alt="blog image"
+                                class="img-fluid w-100 h-100 object-fit-cover blog-image">
+                            <div class="blog-date text-center">
+                                <span>September 6, 2023&nbsp;&nbsp; &nbsp;&nbsp;10:19AM</span>
+                            </div>
+                        </div>
+                        <div class="blog-content mt-3 flex-grow-1 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="blog-title">The Rayya Wellness Philosophy: Harmony of Mind, Body & Spirit
+                                </h5>
+                                <p class="mt-2 blog-disc">
+                                    At Rayya Wellness, we believe true wellness goes beyond pampering. Our holistic
+                                    approach integrates
+                                    ancient healing techniques, modern therapies, and tailored wellness journeys to
+                                    restore balance.
+                                    Experience wellness that uplifts your senses, nurtures your body, and calms your
+                                    mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 4 Small Blogs -->
+                <div class="col-lg-6 d-flex flex-column justify-content-between">
+                    <div class="row gy-4 flex-grow-1">
+
+                        <div class="col-md-6 col-sm-6 d-flex">
+                            <div class="blog-item small-blog h-100 d-flex flex-column">
+                                <div class="blog-image position-relative">
+                                    <img src="images/blog2.png" alt="blog image"
+                                        class="img-fluid w-100 h-100 object-fit-cover">
+                                    <div class="blog-date d-flex justify-content-between">
+                                        <span>September 6, 2023</span>
+                                        <span>10:19AM</span>
+                                    </div>
+                                </div>
+                                <h6 class="fw-semibold mt-3 flex-grow-1">Discover the Power of Detox: Rayya's Renewed
+                                    Vitality Retreat</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 d-flex">
+                            <div class="blog-item small-blog h-100 d-flex flex-column">
+                                <div class="blog-image position-relative">
+                                    <img src="images/blog3.png" alt="blog image"
+                                        class="img-fluid w-100 h-100 object-fit-cover">
+                                    <div class="blog-date d-flex justify-content-between">
+                                        <span>September 6, 2023</span>
+                                        <span>10:19AM</span>
+                                    </div>
+                                </div>
+                                <h6 class="fw-semibold mt-3 flex-grow-1">Inner Peace Awaits: Mindfulness, Yoga &
+                                    Breathwork at Rayya</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 d-flex">
+                            <div class="blog-item small-blog h-100 d-flex flex-column">
+                                <div class="blog-image position-relative">
+                                    <img src="images/blog4.png" alt="blog image"
+                                        class="img-fluid w-100 h-100 object-fit-cover">
+                                    <div class="blog-date d-flex justify-content-between">
+                                        <span>September 6, 2023</span>
+                                        <span>10:19AM</span>
+                                    </div>
+                                </div>
+                                <h6 class="fw-semibold mt-3 flex-grow-1">Spa Rejuvenation: Treat Yourself to Radiant
+                                    Renewal</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 d-flex">
+                            <div class="blog-item small-blog h-100 d-flex flex-column">
+                                <div class="blog-image position-relative">
+                                    <img src="images/blog5.png" alt="blog image"
+                                        class="img-fluid w-100 h-100 object-fit-cover">
+                                    <div class="blog-date d-flex justify-content-between">
+                                        <span>September 6, 2023</span>
+                                        <span>10:19AM</span>
+                                    </div>
+                                </div>
+                                <h6 class="mt-3 flex-grow-1">Emotional Healing: Techniques to Reset Your Inner Self</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="view-all-link fs-4">View all</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- TESTIMONIALS SECTION - Guest Reviews -->
+    <!-- ============================================ -->
+    <div class="container px-0">
+        <h1 class="local-heading fw-400 text-center text-black px-3 px-md-0">
+            FROM OUR GUEST
+        </h1>
+        <div class="swiper localSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/Guest1.png" alt="THE FIRST COLLECTION MARINA" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <p class="m-0 guest-title">"From the moment I stepped in, I felt a wave of calm. The massage
+                                was
+                                heavenly, and the therapists were incredibly attentive. I left feeling lighter, inside
+                                and out."</p>
+                            <a href="#" class="">Amira K., Dubai Resident</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/Guest2.png" alt="TRYP BY WYNDHAM DUBAI" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+
+                            <p class="m-0 guest-title">"We booked the Couples Escape package during our honeymoon and it
+                                was
+                                beyond perfect. Private suite, relaxing ambiance, and personalized care — we'll
+                                definitely come back!"</p>
+                            <a href="#" class="">Ayu James & Alina, UK Visitors</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/Guest3.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <p class="m-0 guest-title">"Tried the detox ritual after a long week of travel. My skin
+                                glowed, my
+                                muscles relaxed, and my mind reset. I highly recommend the aromatherapy sessions."</p>
+                            <a href="#" class=""> James & Alina, UK Visitors</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/Guest1.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <p class="m-0 guest-title">"Tried the detox ritual after a long week of travel. My skin
+                                glowed, my
+                                muscles relaxed, and my mind reset. I highly recommend the aromatherapy sessions."</p>
+                            <a href="#" class=""> James & Alina, UK Visitors</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/Guest2.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <p class="m-0 guest-title">"Tried the detox ritual after a long week of travel. My skin
+                                glowed, my
+                                muscles relaxed, and my mind reset. I highly recommend the aromatherapy sessions."</p>
+                            <a href="#" class=""> James & Alina, UK Visitors</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-upper">
+                            <img src="images/Guest3.png" alt="STAYBRIDGE SUITES" class="imgs" />
+                        </div>
+                        <div class="card-bottom text-center">
+                            <p class="m-0 guest-title">"Tried the detox ritual after a long week of travel. My skin
+                                glowed, my
+                                muscles relaxed, and my mind reset. I highly recommend the aromatherapy sessions."</p>
+                            <a href="#" class=""> James & Alina, UK Visitors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- FOOTER SECTION - Subscribe & Contact -->
+        <!-- ============================================ -->
+        <footer style="padding: 0; margin: 0; width: 100%;">
+            <!-- Image Section (Full Width) -->
+            <section
+                style="position: relative; width: 100vw; margin-left: calc(50% - 50vw); padding: 0; margin-top: 0; margin-bottom: 0;">
+                <img src="images/footer.png" class="footer-img" alt="Subscribe Image">
+
+                <div class="footer-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="footer-heading mb-3 text-white">
+                        A Holistic Wellness Journey Awaits You Here
+                    </h5>
+
+                    <form class="d-flex justify-content-center footer-form flex-wrap px-3">
+                        <input type="email" class="form-control footer-input" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn footer-btn ms-0 ms-sm-2 mt-2 mt-sm-0">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Black Footer Section (Full Width) -->
+            <section class="bg-black text-white"
+                style="width: 100vw; margin-left: calc(50% - 50vw); padding: 3rem 0 2rem 0; margin-top: 0; margin-bottom: 0;">
+                <div style="max-width: 1400px; margin: 0 auto; padding: 0 100px;">
+                    <!-- Main Footer Content -->
+                    <div class="row g-4">
+                        <!-- Section 1: Logo & Contact (Left) -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <img src="images/logo.png" alt="Rayya Wellness" class="footer-logo mb-3"
+                                style="filter: brightness(0) invert(1);">
+                            <div class="footer-contact">
+                                <p class="mb-2">
+                                    <i class="bi bi-envelope-fill me-2"></i>
+                                    INFO@RAYYAWELLNESS.COM
+                                </p>
+                                <p class="mb-0">
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    +971 4 524 7716
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Section 2: Navigation Links (Center) -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <ul class="footer-nav list-unstyled">
+                                <li><a href="#" class="footer-link">HOME</a></li>
+                                <li><a href="#" class="footer-link active">ABOUT</a></li>
+                                <li><a href="#" class="footer-link">RETREAT</a></li>
+                                <li><a href="#" class="footer-link">SPA</a></li>
+                                <li><a href="#" class="footer-link">WELLNESS</a></li>
+                                <li><a href="#" class="footer-link">BLOG</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Section 3: Social (Right) -->
+                        <div class="col-lg-4 col-md-12 col-12 text-lg-end text-center">
+                            <div class="footer-social">
+                                <p class="mb-2 social-heading">SOCIAL</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon me-2"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="footer-divider my-4">
+
+                    <!-- Bottom Footer -->
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                            <a href="#" class="footer-bottom-link me-4">PRIVACY POLICY</a>
+                            <a href="#" class="footer-bottom-link">TERMS & CONDITIONS</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <p class="mb-0 footer-copyright">©2025 - RAYYAWELLNESS</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <!-- Bootstrap Icons CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
