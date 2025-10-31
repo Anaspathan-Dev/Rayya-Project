@@ -1,22 +1,21 @@
+/* ============================================ */
+/* GLOBAL RESET & BASE STYLES */
+/* ============================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --main-bg: #F5F3EF;
-  --secondary-bg: black;
-  --primary: #0A2647;
-  --secondary: #144272;
-}
-
 body,
 html {
-  background-color: var(--main-bg);
+  background-color: #F5F3EF;
   overflow-x: hidden;
 }
 
+/* ============================================ */
+/* HEADER SECTION - Hero Video & Navigation */
+/* ============================================ */
 header {
   position: relative;
   background-color: black;
@@ -30,12 +29,10 @@ header {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  /* display: flex; */
   height: 60px;
-
 }
 
-ul {
+.nav-ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -73,9 +70,6 @@ header video {
   width: auto;
   height: auto;
   z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -97,7 +91,6 @@ header .container {
 .inner {
   width: 825px;
   color: white;
-  /* border: 1px solid white; */
 }
 
 .inner>p {
@@ -120,6 +113,9 @@ header .overlay {
   z-index: 1;
 }
 
+/* ============================================ */
+/* RECHARGE SECTION - Mind, Body & Spirit */
+/* ============================================ */
 .sec-container {
   margin-top: 70px;
   width: 100%;
@@ -132,11 +128,10 @@ header .overlay {
 .left-card {
   width: 40%;
   position: relative;
-  /* border: 1px solid; */
 }
 
 .left-card img {
-  opacity: 0.050;
+  opacity: 0.05;
   width: 100%;
 }
 
@@ -146,9 +141,8 @@ header .overlay {
   font-size: 42px;
   font-weight: 400;
   margin-top: 110px;
-  font-family: Adobe Garamond Pro;
+  font-family: 'Adobe Garamond Pro';
   letter-spacing: -4%;
-
 }
 
 .right-card {
@@ -160,20 +154,19 @@ header .overlay {
 }
 
 .explore-card {
-  background-color: #F5F3EF;
+  background-color: #f5f3ef;
   font-size: 16px;
   width: 100%;
 }
 
-.card-title{
-   font-family: "Montserrat", sans-serif;
+.card-title {
+  font-family: "Montserrat", sans-serif;
 }
-
 
 .card-text {
   text-align: justify;
-   font-family: "Montserrat", sans-serif;
-   line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
 }
 
 .explore-btn {
@@ -186,6 +179,9 @@ header .overlay {
   font-size: 20px;
 }
 
+/* ============================================ */
+/* I AM LOOKING FOR SECTION - Services Grid */
+/* ============================================ */
 .looking-part {
   margin: 70px 0 70px 0;
 }
@@ -238,7 +234,7 @@ h5 {
   font-size: 22px;
 }
 
-.card-title{
+.card-title {
   text-align: start;
 }
 
@@ -250,18 +246,14 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* pehle bottom me */
   text-align: center;
   transition: all 0.4s ease;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Hover hone pe */
 .card-hover:hover .card-img-overlay {
   align-items: center;
-  /* center me aayega text */
   background-color: rgba(0, 0, 0, 0.6);
-  /* overlay dark hoga */
   transition: transform 0.3s ease;
 }
 
@@ -269,18 +261,22 @@ h5 {
   padding: 0 150px;
 }
 
+/* ============================================ */
+/* LOCAL ESCAPES SECTION - Swiper Slider */
+/* ============================================ */
 .swiper {
   width: 100%;
 }
 
 .local-heading {
   padding: 0 15px;
+  margin-top: 70px;
+  margin-bottom: 0;
+  font-family: 'Adobe Garamond Pro';
+  text-transform: uppercase;
 }
 
-/* Mobile first approach */
 .swiper-slide {
-  height: 300px;
-  /* Mobile ke liye chota height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,9 +297,8 @@ h5 {
   transition: all 0.3s ease;
 }
 
-/* Light overlay - always visible */
 .image-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -314,12 +309,10 @@ h5 {
   transition: all 0.3s ease;
 }
 
-/* Dark overlay on hover */
 .image-container:hover::before {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Text styling - Mobile first */
 .overlay-text {
   position: absolute;
   bottom: 15%;
@@ -331,29 +324,25 @@ h5 {
   opacity: 1;
   transition: all 0.3s ease;
   width: 90%;
-  /* Mobile pe thoda padding */
   padding: 0 10px;
 }
 
 .overlay-text h3 {
   font-size: 16px;
-  /* Mobile ke liye chota font */
   font-weight: bold;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.3;
 }
 
-/* Hover pe text CENTER mein move karega */
 .image-container:hover .overlay-text {
   bottom: 50%;
   transform: translate(-50%, 50%);
 }
 
-/* Pagination */
 .swiper-pagination {
-  margin-top: 20px;
   position: inherit;
+  margin-top: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -374,64 +363,82 @@ h5 {
   border-radius: 0;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .local-heading {
-    padding: 0 50px;
-  }
-
-  .swiper-slide {
-    height: 400px;
-  }
-
-  .overlay-text h3 {
-    font-size: 20px;
-  }
-
-  .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    margin: 0 5px !important;
-  }
-
-  .swiper-pagination-bullet-active {
-    width: 15px;
-    height: 15px;
-  }
+/* ============================================ */
+/* WELLNESS COACHES SECTION - Team Swiper */
+/* ============================================ */
+.localSwiper .card {
+  width: 100%;
+  max-width: 483px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  margin: 0 auto;
+  margin-top: 0;
+  position: relative;
+  padding-bottom: 80px;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .local-heading {
-    padding: 0 161px;
-  }
-
-  .swiper-slide {
-    height: 536px;
-    /* Desktop ke liye original height */
-  }
-
-  .overlay-text {
-    width: 100%;
-    padding: 0;
-  }
-
-  .overlay-text h3 {
-    font-size: 24px;
-    /* Desktop ke liye bada font */
-  }
+.localSwiper .card-upper {
+  width: 100%;
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .local-heading {
-    padding: 0 200px;
-  }
+.localSwiper .imgs {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
+.localSwiper .card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: white;
+  width: 90%;
+  max-width: 411px;
+  margin: 0 auto;
+  margin-top: -50px;
+  padding: 25px 20px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+.localSwiper .card-bottom h5 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #628A1A;
+  font-family: Clash Display Variable;
+}
+
+.cd-info {
+  font-family: Clash Display Variable;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #333333;
+}
+
+.localSwiper .card-bottom a {
+  font-weight: lighter;
+  font-family: Clash Display Variable;
+  text-decoration: none;
+  color: #333333;
+}
+
+/* ============================================ */
+/* YOGA & MEDITATION SECTION - Image Slider */
+/* ============================================ */
 p.right-cont {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #000;
 }
 
@@ -442,7 +449,6 @@ p.right-cont {
 .right {
   width: 30%;
 }
-
 
 .btn-outline-dark {
   border: 1px solid black;
@@ -462,6 +468,7 @@ p.right-cont {
   justify-content: center;
   align-items: center;
   background-color: white;
+  margin-top: 70px;
 }
 
 .left-image {
@@ -499,7 +506,6 @@ p.right-cont {
   border: 1px solid black;
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
-
 }
 
 .read-more:hover {
@@ -509,7 +515,6 @@ p.right-cont {
 }
 
 .next-btn {
-  /* background-color: transparent; */
   border: none;
   background-color: rgb(178, 22, 22);
 }
@@ -518,14 +523,12 @@ p.right-cont {
   position: absolute;
   right: 8%;
   font-size: 30px;
-  color: #D9D9D9;
-  /* transition: all 0.3s ease-in-out; */
+  color: #d9d9d9;
   padding: 10px;
 }
 
 .next-btn i:hover {
   color: darkgray;
-  /* transition: all 0.3s ease-out; */
   background-color: rgba(0, 0, 0, 0.834);
   border-radius: 50px;
   color: white;
@@ -536,25 +539,391 @@ p.right-cont {
   transition: opacity 0.3s ease-in-out;
 }
 
-
-/* .slide-out-left {
-  animation: slideOutLeft 0.2s ease forwards;
+/* ============================================ */
+/* OFFER & PACKAGES SECTION - Pricing Cards */
+/* ============================================ */
+.offer-packages {
+  background-color: #f9f6f1;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.slide-in-right {
-  animation: slideInRight 0.2s ease forwards;
+.title {
+  font-family: 'Adobe Garamond Pro';
+  font-size: 1.8rem;
+  color: #1c1c1c;
+  letter-spacing: 1px;
 }
 
-@keyframes slideOutLeft {
-  0% { transform: translateX(0); opacity: 1; }
-  100% { transform: translateX(-100%); opacity: 0; }
+.package-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 40px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-@keyframes slideInRight {
-  0% { transform: translateX(100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
-} */
+.package-cards {
+  width: 100%;
+}
 
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.package-title {
+  font-family: Clash Display Variable;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.price {
+  font-family: Manrope;
+  display: flex;
+  align-items: baseline;
+  margin: 25px 0;
+}
+
+.price .currency {
+  font-size: 1.5rem;
+  vertical-align: top;
+  color: black;
+}
+
+.price .amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 5px;
+  color: black;
+}
+
+.price .session {
+  font-size: 1rem;
+  color: #444;
+  color: black;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.fa-check {
+  font-size: 15px;
+  color: #151515;
+}
+
+.package-features li {
+  font-family: Montserrat;
+  font-size: 0.95rem;
+  color: #151515;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.schedule-btn {
+  font-family: Clash Display Variable;
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-weight: 400 !important;
+  padding: 10px 0;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.schedule-btn:hover {
+  background: #333;
+}
+
+/* ============================================ */
+/* BLOG SECTION - Articles & Posts */
+/* ============================================ */
+.blog-section {
+  background-color: #f9f6f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+  font-family: 'Adobe Garamond Pro';
+  font-size: 42px;
+  font-weight: 400;
+  color: #1c1c1c;
+  letter-spacing: 1px;
+}
+
+.blog-title {
+  font-family: Clash Display Variable;
+  font-size: 20px;
+  font-weight: 500;
+  color: #242424;
+  text-align: left;
+}
+
+.blog-disc {
+  font-size: 20px;
+  text-align: justify;
+  color: #242424;
+  line-height: 1.2;
+}
+
+.blog-item {
+  background: transparent;
+}
+
+.blog-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.blog-image img {
+  border-radius: 5px;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-image:hover img {
+  transform: scale(1.05);
+}
+
+.blog-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.large-blog .blog-date {
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+.view-all-link {
+  font-size: 0.95rem;
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: #444;
+}
+
+/* ============================================ */
+/* TESTIMONIALS SECTION - Guest Reviews */
+/* ============================================ */
+.guest-title {
+  font-family: Clash Display Variable;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* ============================================ */
+/* FOOTER SECTION - Subscribe & Contact */
+/* ============================================ */
+footer {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Footer Image Section */
+.footer-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+}
+
+.footer-heading {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+}
+
+.footer-form {
+  width: 100%;
+  max-width: 675px;
+  gap: 5px;
+}
+
+.footer-input {
+  max-width: 460px;
+  border: 2px solid white;
+  border-radius: 0;
+  padding: 12px 20px;
+  flex: 1;
+  min-width: 200px;
+  background: transparent;
+  color: white;
+}
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-btn {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0;
+  padding: 12px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #f0f0f0;
+  color: black;
+}
+
+/* Footer Black Section */
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact i {
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.footer-link:hover {
+  color: #4CAF50;
+}
+
+.footer-link.active {
+  color: #4CAF50;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-heading {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: white;
+  font-weight: 400;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 22px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  color: #4CAF50;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-bottom-link {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-link:hover {
+  color: #4CAF50;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================ */
+/* TIMELINE COMPONENT - Horizontal Timeline */
+/* ============================================ */
 .cd-horizontal-timeline ol,
 .cd-horizontal-timeline ul {
   list-style: none;
@@ -563,7 +932,6 @@ p.right-cont {
 .cd-timeline-navigation a:hover,
 .cd-timeline-navigation a:focus {
   border-color: #313740;
-
 }
 
 .cd-horizontal-timeline a,
@@ -581,7 +949,7 @@ p.right-cont {
 .cd-horizontal-timeline blockquote:after,
 .cd-horizontal-timeline q:before,
 .cd-horizontal-timeline q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -593,19 +961,15 @@ p.right-cont {
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 2em auto;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
 .cd-horizontal-timeline::before {
-
-  content: 'mobile';
+  content: "mobile";
   display: none;
 }
 
 .cd-horizontal-timeline.loaded {
-
   opacity: 1;
 }
 
@@ -613,7 +977,6 @@ p.right-cont {
   position: relative;
   height: 100px;
   width: 105%;
-
   margin: 0;
 }
 
@@ -623,13 +986,11 @@ p.right-cont {
   margin-left: 0;
   width: 100%;
   overflow: hidden;
-
 }
 
 .cd-horizontal-timeline .events-wrapper::after,
 .cd-horizontal-timeline .events-wrapper::before {
-
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   top: 0;
@@ -639,30 +1000,23 @@ p.right-cont {
 
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-
 }
 
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-
 }
 
 .cd-horizontal-timeline .events {
-
   position: absolute;
   z-index: 1;
   left: 0;
   top: 50px;
   height: 2px;
-
   background: #dfdfdf;
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
 .cd-horizontal-timeline .filling-line {
-
   position: absolute;
   z-index: 1;
   left: 0;
@@ -670,18 +1024,8 @@ p.right-cont {
   height: 100%;
   width: 100%;
   background-color: #313740;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
 
@@ -694,24 +1038,14 @@ p.right-cont {
   padding-bottom: 15px;
   color: white;
   text-decoration: none;
-
-
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
   transform: translateZ(0);
 }
 
 .cd-horizontal-timeline .events a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: -5px;
   height: 12px;
@@ -719,8 +1053,6 @@ p.right-cont {
   border-radius: 50%;
   border: 2px solid #dfdfdf;
   background-color: #f8f8f8;
-  -webkit-transition: background-color 0.3s, border-color 0.3s;
-  -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -742,21 +1074,11 @@ p.right-cont {
   border-color: #313740;
 }
 
-@media only screen and (min-width: 1100px) {
-  .cd-horizontal-timeline::before {
-    content: 'desktop';
-  }
-}
-
 .cd-timeline-navigation a {
   position: absolute;
   z-index: 1;
   top: 50%;
   bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   height: 34px;
   width: 34px;
@@ -766,13 +1088,11 @@ p.right-cont {
   color: transparent;
   text-indent: 100%;
   white-space: nowrap;
-  -webkit-transition: border-color 0.3s;
-  -moz-transition: border-color 0.3s;
   transition: border-color 0.3s;
 }
 
 .cd-timeline-navigation a::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 16px;
   width: 16px;
@@ -780,19 +1100,11 @@ p.right-cont {
   top: 50%;
   bottom: auto;
   right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
 .cd-timeline-navigation a.prev {
   left: 0;
-  -webkit-transform: translateY(-50%) rotate(180deg);
-  -moz-transform: translateY(-50%) rotate(180deg);
-  -ms-transform: translateY(-50%) rotate(180deg);
-  -o-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
 }
 
@@ -821,8 +1133,6 @@ p.right-cont {
   width: 100%;
   margin: 2em 0;
   overflow: hidden;
-  -webkit-transition: height 0.4s;
-  -moz-transition: height 0.4s;
   transition: height 0.4s;
 }
 
@@ -832,18 +1142,10 @@ p.right-cont {
   width: 100%;
   left: 0;
   top: 0;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
   transform: translateX(-100%);
   padding: 0 5%;
   opacity: 0;
-  -webkit-animation-duration: 0.4s;
-  -moz-animation-duration: 0.4s;
   animation-duration: 0.4s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
 
@@ -851,31 +1153,21 @@ p.right-cont {
   position: relative;
   z-index: 2;
   opacity: 1;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
   transform: translateX(0);
 }
 
 .cd-horizontal-timeline .events-content li.enter-right,
 .cd-horizontal-timeline .events-content li.leave-right {
-  -webkit-animation-name: cd-enter-right;
-  -moz-animation-name: cd-enter-right;
   animation-name: cd-enter-right;
 }
 
 .cd-horizontal-timeline .events-content li.enter-left,
 .cd-horizontal-timeline .events-content li.leave-left {
-  -webkit-animation-name: cd-enter-left;
-  -moz-animation-name: cd-enter-left;
   animation-name: cd-enter-left;
 }
 
 .cd-horizontal-timeline .events-content li.leave-right,
 .cd-horizontal-timeline .events-content li.leave-left {
-  -webkit-animation-direction: reverse;
-  -moz-animation-direction: reverse;
   animation-direction: reverse;
 }
 
@@ -904,144 +1196,121 @@ p.right-cont {
 }
 
 .cd-horizontal-timeline .events-content em::before {
-  content: '- ';
+  content: "- ";
 }
 
 .cd-horizontal-timeline .events-content p {
   font-size: 16px;
   margin-top: 15px;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-/* ==================================== */
-/* *****  ADOBE GARAMOND FONTS  ******* */
-/* ==================================== */
+/* ============================================ */
+/* FONT FACES - Custom Fonts */
+/* ============================================ */
 @font-face {
-  font-family: 'Adobe Garamond Pro';
-  src: url('../fonts/adobe-garamond/AGaramondPro-Bold.woff2') format('woff2'),
-    url('../fonts/adobe-garamond/AGaramondPro-Bold.woff') format('woff');
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/adobe-garamond/AGaramondPro-Bold.woff2") format("woff2"),
+    url("../fonts/adobe-garamond/AGaramondPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Adobe Garamond Pro';
-  src: url('../fonts/adobe-garamond/AGaramondPro-BoldItalic.woff2') format('woff2'),
-    url('../fonts/adobe-garamond/AGaramondPro-BoldItalic.woff') format('woff');
+  font-family: "Clash Display Variable";
+  src: url("../fonts/clash-display/ClashDisplay-Regular.woff") format("woff2"),
+    url("../fonts/adobe-garamond/AGaramondPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/adobe-garamond/AGaramondPro-BoldItalic.woff2") format("woff2"),
+    url("../fonts/adobe-garamond/AGaramondPro-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Adobe Garamond Pro';
-  src: url('../fonts/adobe-garamond/AGaramondPro-Italic.woff2') format('woff2'),
-    url('../fonts/adobe-garamond/AGaramondPro-Italic.woff') format('woff');
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/adobe-garamond/AGaramondPro-Italic.woff2") format("woff2"),
+    url("../fonts/adobe-garamond/AGaramondPro-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Adobe Garamond Pro';
-  src: url('../fonts/adobe-garamond/AGaramondPro-Regular.woff2') format('woff2'),
-    url('../fonts/adobe-garamond/AGaramondPro-Regular.woff') format('woff');
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/adobe-garamond/AGaramondPro-Regular.woff2") format("woff2"),
+    url("../fonts/adobe-garamond/AGaramondPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/* ==================================== */
-/* ******  CLASH DISPLAY FONTS  ******* */
-/* ==================================== */
 @font-face {
-  font-family: 'Clash Display';
-  src: url('../fonts/clash-display/ClashDisplay-Bold.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplay-Bold.woff') format('woff');
+  font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('../fonts/clash-display/ClashDisplay-Light.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplay-Light.woff') format('woff');
+  font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Light.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplay-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('../fonts/clash-display/ClashDisplay-Extralight.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplay-Extralight.woff') format('woff');
+  font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Extralight.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplay-Extralight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display Variable';
-  src: url('../fonts/clash-display/ClashDisplayVariable-Bold.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplayVariable-Bold.woff') format('woff');
+  font-family: "Clash Display Variable";
+  src: url("../fonts/clash-display/ClashDisplayVariable-Bold.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplayVariable-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('../fonts/clash-display/ClashDisplay-Regular.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplay-Regular.woff') format('woff');
+  font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('../fonts/clash-display/ClashDisplay-Medium.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplay-Medium.woff') format('woff');
+  font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Clash Display';
-  src: url('../fonts/clash-display/ClashDisplay-Semibold.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplay-Semibold.woff') format('woff');
+  font-family: "Clash Display";
+  src: url("../fonts/clash-display/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("../fonts/clash-display/ClashDisplay-Semibold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Clash Display Variable';
-  src: url('../fonts/clash-display/ClashDisplayVariable-Bold.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplayVariable-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Clash Display Variable';
-  src: url('../fonts/clash-display/ClashDisplayVariable-Bold.woff2') format('woff2'),
-    url('../fonts/clash-display/ClashDisplayVariable-Bold.woff') format('woff');
-  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
